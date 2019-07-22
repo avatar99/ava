@@ -4,7 +4,7 @@ var prefix = ".";
 var adminprefix = '.'
 
 
-const developers = ["479560968666611722"]
+const developers = ["600369127907131412"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -39,4 +39,4 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 });
 
 
-client.login('NDc5NTYwOTY4NjY2NjExNzIy.XTNXxQ.oGxIxErDXU-z_klxNqLBvjPAEX4');//
+client.login('NjAwMzY5MTI3OTA3MTMxNDEy.XTV4Cg.V3UdwvziMjN8AvSTmxrFJ2lNGpM');//
