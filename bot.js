@@ -1,23 +1,23 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "-";
+var prefix = ".";
 
 client.on('ready', () => {
-	console.log('Dream iS Here');
+	console.log('Avatar iS Here');
 });
 
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`b 1.0`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : DREAM ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Avatar ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
 
 
-    const dreamv2 = ["580838023504199691"]
+    const dreamv2 = ["600369127907131412"]
     client.on('message', message => {
         var dream = message.content.split(` `).slice(1).join(' ');
           if (!dreamv2.includes(message.author.id)) return;
@@ -34,11 +34,11 @@ client.on('ready', () => {
           message.channel.send(`✔️ **Done Listening Now __${dream}__** `)
       } else
       if (message.content.startsWith(prefix + 'st')) {
-    client.user.setGame(dream, "https://www.twitch.tv/dream");
+    client.user.setGame(dream, "https://www.twitch.tv/avatar");
          message.channel.send(`✔️ **Done Stream Now  __${dream}__ **`)
       }
  
     });
 
 
-client.login(process.env.LIGHT);
+client.login('NjAwMzY5MTI3OTA3MTMxNDEy.XTV4Cg.V3UdwvziMjN8AvSTmxrFJ2lNGpM');
